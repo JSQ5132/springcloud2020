@@ -20,6 +20,7 @@ public class OrderFeignController {
 
     @Autowired
     private PaymentFeignService paymentFeignService;
+
     @GetMapping("/consumer/payment/get/{id}")
     public CommonResult getPaymentById(@PathVariable("id") Long id) {
         return paymentFeignService.getPaymentById(id);

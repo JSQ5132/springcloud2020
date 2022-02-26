@@ -13,8 +13,9 @@ import org.springframework.web.bind.annotation.PathVariable;
  * @Version 1.0
  */
 @Component
-@FeignClient("CLOUD-PAYMENT-SERVICE")
+@FeignClient(value = "CLOUD-PAYMENT-SERVICE")
 public interface PaymentFeignService {
+
     @GetMapping("/payment/get/{id}")
     CommonResult getPaymentById(@PathVariable("id") Long id);
 

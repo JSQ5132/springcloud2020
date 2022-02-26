@@ -9,4 +9,3 @@ spring:
     zookeeper:
       connect-string: 192.168.3.7:2181 #zookeeper Server的地址和端口号
 
-
